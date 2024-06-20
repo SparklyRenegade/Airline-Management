@@ -1,0 +1,62 @@
+.add-flight-box {
+  background-color: white;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.add-flight-box h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group-addflight {
+  margin-bottom: 15px;
+}
+
+.form-group-addflight label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.form-group-addflight input, .form-group-addflight select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addflight-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.addflight-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .add-flight-box {
+    margin-top: 250px;
+    width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-flight-box {
+    width: 90%;
+  }
+}

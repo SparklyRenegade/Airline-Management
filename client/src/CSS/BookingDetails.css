@@ -1,0 +1,144 @@
+.flight-booking-detail{
+    width:70%;
+    margin:auto;
+    border:none;
+    background-color: white;;
+    border-radius:20px;
+    padding:0;
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.flight-booking-title{
+    font-weight:500;
+    font-size:30px;
+    background-color:rgba(77, 115, 252, 0.2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    padding-left: 50px;
+}
+
+.booking-flight-detail, .booking-flight-route{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:8px;
+}
+
+.booking-departure-time, .booking-arrival-time{
+    font-size:19px;
+    font-weight:500;
+}
+
+.booking-departure-location, .booking-arrival-location, .route-duration{
+    font-size:18px;
+    font-weight:500;
+    color:rgb(153, 153, 153);
+}
+
+.route-info{
+    margin:0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-dates{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:25px;
+}
+
+.vr-line{
+    height:50px;
+    background-color: rgb(153, 153, 153);
+    width:1px;
+}
+
+.date-text{
+    font-size:20px;
+    font-weight: 400;
+}
+
+.date-label{
+    font-size: 17px;
+    color:rgb(153, 153, 153);
+}
+
+.booking-flight-text{
+    margin:20px;
+    color:rgb(153, 153, 153);
+    line-height: 25px;
+    font-size:18px;
+    font-weight:400
+}
+
+@media (max-width:1000px){
+    .flight-booking-title{
+        font-size:24px;
+    }
+    .booking-departure-time, .booking-arrival-time{
+        font-size:17px;
+    }
+    
+    .booking-departure-location, .booking-arrival-location, .route-duration{
+        font-size:15px;
+    }
+
+    .date-text{
+        font-size:17px;
+    }
+    
+    .date-label{
+        font-size: 15px;
+    }
+
+    .booking-flight-text{
+        font-size:15px;
+    }
+}
+
+@media(max-width:900px){
+    .route-plan-img{
+        width:120px;
+    }
+}
+
+@media(max-width:750px){
+    .flight-booking-detail{
+        width:95%;
+    }
+
+    .route-plan-img{
+        width:100px;
+    }
+
+    .flight-booking-title{
+        font-size:20px;
+    }
+    .booking-departure-time, .booking-arrival-time{
+        font-size:15px;
+    }
+    
+    .booking-departure-location, .booking-arrival-location, .route-duration{
+        font-size:14px;
+    }
+
+    .date-text{
+        font-size:15px;
+    }
+    
+    .date-label{
+        font-size: 14px;
+        font-weight:500;
+    }
+
+    .booking-flight-text{
+        font-size:13px;
+        font-weight:500;
+        line-height:20px;
+    }
+}

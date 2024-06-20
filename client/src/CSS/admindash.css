@@ -1,0 +1,41 @@
+
+.container_dash{
+  display: flex;
+}
+.box-dash {
+  background-color: white;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box-dash:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.box-dash h2 {
+  margin-bottom: 10px;
+  color: #34495e;
+  font-size: 24px;
+}
+
+.box-dash h5 {
+  color: #7f8c8d;
+  font-size: 20px;
+}
+
+
+
+@media (max-width: 760px) {
+  .container_dash{
+    margin-top: 220px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.user-profile-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.user-profile-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user1{
+    display:flex;
+    justify-content: space-between;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+.user-info p strong {
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 30px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.form-container form div {
+    margin-bottom: 10px;
+}
+
+.form-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-container form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container form button {
+    margin-right: 10px;
+} 

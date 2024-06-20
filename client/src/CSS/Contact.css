@@ -1,0 +1,43 @@
+.contact-container{
+    padding:40px;
+    border-radius:20px;
+    width:60%;
+    margin: auto;
+    background-color: white;
+}
+
+.contact-container input, .contact-container textarea, .contact-container select{
+    background-color: rgb(248, 247, 247);
+    padding:10px 5px 10px 5px;
+    width:100%;
+    color:rgb(93, 93, 93);
+    border-radius: 10px;
+    padding-left:20px;
+    height:46px;
+}
+
+.contact-container textarea{
+    height:100px;
+}
+
+.first1-line, .second1-line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    margin-top:30px;
+}
+
+.third1-line{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+@media(max-width:900px){
+    .first1-line, .second1-line{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+    .contact-container{
+        width:80%;
+    }
+}

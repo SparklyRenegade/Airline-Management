@@ -1,0 +1,165 @@
+.mainContainer-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+}
+
+
+.header-layout {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; 
+  padding: 10px 20px;
+  background-color: #2c3e50;
+  color: white;
+  z-index: 1000;
+}
+
+.header-layout .btn-layout {
+  margin-left: 15px;
+  padding: 8px 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-layout .btn-layout:first-child {
+  margin-left: 0; /* Remove left margin for the first button */
+}
+
+.header-layout .btn-layout:hover {
+  background-color: #2980b9;
+}
+
+/* Make the sidebar fixed on the left */
+.menu-layout {
+  position: fixed;
+  top: 60px; /* Height of the header */
+  left: 0;
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding-top: 20px;
+  height: calc(100vh - 60px); /* Adjust for the header height */
+  box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-layout ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-layout ul li {
+  padding: 15px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.menu-layout ul li:hover {
+  background-color: #34495e;
+}
+
+.menu-layout ul li button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-layout ul li button .fa-icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.menu-layout ul li button:hover {
+  color: #ecf0f1;
+}
+
+/* Adjust the content layout to account for fixed sidebar and header */
+.content-layout {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Height of the header */
+  margin-left: 250px; /* Width of the sidebar */
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 20px; /* Add padding to avoid content touching the edges */
+}
+
+.data-layout {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .header-layout {
+    justify-content: flex-start;
+  }
+
+  .menu-layout {
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  .content-layout {
+    margin-left: 0;
+    margin-top: 120px; /* Increase margin-top to avoid content going under the header */
+  }
+
+  .data-layout {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-layout {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-layout .btn-layout {
+    margin: 10px 0;
+  }
+
+  .menu-layout {
+    padding-top: 60px; /* Increase padding-top to avoid menu going under the header */
+  }
+
+  .menu-layout ul li {
+    padding: 10px;
+    margin: 5px 0;
+  }
+
+  .content-layout {
+    padding: 10px; /* Add padding to avoid content touching the edges */
+  }
+
+  .box-feedback {
+    width: 100%; /* Ensure the feedback box takes full width on small screens */
+  }
+}

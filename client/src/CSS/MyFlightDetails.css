@@ -1,0 +1,34 @@
+.my-flight-details{
+    display:grid;
+    grid-template-columns: 4fr 2fr;
+}
+.pass-details{
+    padding:30px;
+}
+.pass-details-title{
+    font-size:25px;
+    color:rgb(153,153,153);
+    margin-bottom:20px;
+}
+.all-summary{
+    width:90%;
+    margin-top:35px;
+}
+.payment1{
+    margin-bottom:50px;
+    border-radius: 30px;
+    background-color: white;
+}
+.payment-history{
+    padding:25px;
+}
+
+@media(max-width:1000px){
+    .my-flight-details{
+        grid-template-columns: 1fr;
+    }
+    .all-summary{
+        width:70%;
+        margin:auto;
+    }
+}

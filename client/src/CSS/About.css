@@ -1,0 +1,52 @@
+.airpot{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    width:90%;
+    margin:auto;
+    border-radius:35px;
+}
+
+.airpot1{
+    text-align: center;
+    width:80%;
+    font-weight:500;
+    font-size:40px;
+}
+
+.airpot2{
+    text-align: center;
+    width:80%;
+    margin-top:18px;
+    font-size:17px;
+    margin-bottom:18px;
+}
+
+@media(max-width:900px){
+    .airpot1{
+        font-size:35px;
+    }
+    .airpot2{
+        font-size:17px;
+    }
+}
+
+@media(max-width:750px){
+    .airpot1{
+        font-size:30px;
+    }
+    .airpot2{
+        font-size:15px;
+    }
+}
+
+@media(max-width:500px){
+    .airpot1{
+        font-size:27px;
+    }
+    .airpot2{
+        font-size:15px;
+    }
+}

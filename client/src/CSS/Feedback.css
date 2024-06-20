@@ -1,0 +1,88 @@
+.box-feedback {
+  background-color: white;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feedback-list {
+  margin-top: 20px;
+}
+
+.feedback-item {
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  text-align: left;
+}
+
+.feedback-item:last-of-type {
+  border-bottom: none;
+}
+
+.user-feedback {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.comment-feedback {
+  font-style: italic;
+  margin: 5px 0;
+}
+
+.date-feedback {
+  color: #7f8c8d;
+  font-size: 0.9em;
+}
+
+.message-feedback {
+  word-break: break-all;
+}
+
+.filter-section-feedback,
+.sort-section-feedback {
+  display: flex;
+  justify-content: flex-end; /* Center align the filter and sort sections */
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-section-feedback label,
+.sort-section-feedback label {
+  margin-right: 10px;
+}
+
+.filter-section-feedback input,
+.sort-section-feedback input,
+.filter-section-feedback select {
+  border: 2px solid black;
+  margin-right: 20px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+.sort-section-feedback button,
+.filter-section-feedback button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+}
+
+.sort-section-feedback button:hover,
+.filter-section-feedback button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .box-feedback{
+    margin-top: 300px;
+  
+}
+
+}

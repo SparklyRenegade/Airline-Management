@@ -1,0 +1,17 @@
+svg .dashed {
+    stroke-dasharray: 22;
+    animation: dash 8s linear alternate infinite;
+}
+
+svg .path {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 0;
+  }
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 0;
+    }
+    to {
+      stroke-dashoffset: 500;
+    }
+  }

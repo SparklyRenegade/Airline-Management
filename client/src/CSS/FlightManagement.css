@@ -1,0 +1,172 @@
+/* General container for the flight management section */
+.box-FM {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+  overflow-x: auto;
+}
+
+/* Filter and sort section styles */
+.filter-section {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f9fc;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.filter-section div,
+.sort-section {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.filter-section label, 
+.sort-section label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.filter-section select, 
+.sort-section select,
+.filter-section input {
+  margin-right: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  background-color: #ecf0f1;
+}
+
+.filter-section button, 
+.sort-section button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+}
+
+.filter-section button:hover, 
+.sort-section button:hover {
+  opacity: 0.8;
+}
+
+/* Table styles */
+.box-FM table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.box-FM th, 
+.box-FM td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.box-FM th {
+  background-color: #2c3e50;
+  color: white;
+  text-align: left;
+}
+
+.box-FM td {
+  text-align: left;
+}
+
+.box-FM button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+/* Button styles */
+.edit-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.box-FM button:hover {
+  opacity: 0.8;
+}
+
+/* Modal styles */
+.modal-FM {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for a darker overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+}
+
+.modal-content-FM {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%; /* Ensure the modal width is responsive */
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Enable scrolling if content is too long */
+  max-height: 90%; /* Ensure the modal does not exceed the viewport height */
+}
+
+/* Form group styles within the modal */
+.modal-content-FM .form-group {
+  margin-bottom: 15px;
+}
+
+.modal-content-FM label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-content-FM input,
+.modal-content-FM select {
+  width: calc(100% - 10px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Button styles within the modal */
+.save-btn {
+  background-color: #2ecc71;
+  color: white;
+  margin-right: 10px;
+}
+
+.cancel-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .box-FM{
+    margin-top: 280px;
+    
+
+}
+
+}
